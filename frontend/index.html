@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vishal K Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-logo-bar">
+  <h1>Vishal K Portfolio</h1>
+</header>
+
+<div class="creative-top">
+  <p>“Success is the sum of small efforts repeated day in and day out.” — Robert Collier</p>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-controls">
+    <button id="themeToggle" class="btn primary-btn" type="button">Switch Theme</button>
+  </div>
+  <div class="guide-box">
+    <p>Need direction? Explore what I do by jumping straight to three key sections.</p>
+    <div class="guide-actions">
+      <button class="btn secondary-btn" id="gotoSkills" type="button">Go to Skills</button>
+      <button class="btn secondary-btn" id="gotoCerts" type="button">Go to Certifications</button>
+      <button class="btn secondary-btn" id="gotoContact" type="button">Contact Me</button>
+    </div>
+  </div>
+  <div class="hero-card glass">
+    <h1>Vishal K</h1>
+    <p class="hero-simple">BCA student and AI enthusiast crafting clean code and bold ideas.</p>
+    <div class="hero-details">
+      <span>📚 BCA Student</span>
+      <span>🏫 Kristu Jayanti College</span>
+      <span>💼 Aspiring Full-Stack Developer & AI Enthusiast</span>
+    </div>
+    <button class="primary-btn" onclick="scrollToContact()">Contact Me</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about unique-appear">
+  <div class="about-grid">
+    <div class="about-card glass">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Vishal, a BCA student at Kristu Jayanti College with a passion for AI, web development, and meaningful collaboration.
+        I enjoy building polished user interfaces, analyzing data with Python, and designing intelligent solutions that help teams grow.
+      </p>
+      <ul class="about-highlights">
+        <li>🎓 Strong fundamentals in algorithms and database systems</li>
+        <li>🧪 Certified in Microsoft, IBM, Celonis and Intel programs</li>
+        <li>🤖 Practical experience with machine learning pipelines</li>
+      </ul>
+    </div>
+
+    <div class="about-features">
+      <div class="feature-item">
+        <h3>Creative Developer</h3>
+        <p>Responsive design, theme systems, and accessible experiences.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Team Player</h3>
+        <p>Cross-functional collaboration, leadership, and project planning.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Growth Mindset</h3>
+        <p>Constant learning, certification progress, and AI exploration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills unique-appear">
+  <h2 class="section-title">My Unique Skills</h2>
+  <p class="section-subtitle">Strengths that make me standout in projects and teams</p>
+  <div class="cards">
+    <div class="card">💻 Programming Languages</div>
+    <div class="card">☁️ Google Colab</div>
+    <div class="card">🤝 Team Management</div>
+    <div class="card">🧭 Leadership</div>
+    <div class="card">🧠 Critical Thinking</div>
+    <div class="card">📊 Applied Machine Learning</div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="certifications unique-appear">
+  <h2 class="section-title">Certifications</h2>
+  <p class="cert-subtitle">Validated expertise from top global institutions</p>
+  <div class="cert-grid">
+    <article class="cert-card">
+      <div class="ribbon">Verified</div>
+      <h3>Microsoft</h3>
+      <p>Azure Fundamentals / Power Platform</p>
+    </article>
+    <article class="cert-card">
+      <div class="ribbon">Verified</div>
+      <h3>IBM</h3>
+      <p>Data Science and AI Certifications</p>
+    </article>
+    <article class="cert-card">
+      <div class="ribbon">Verified</div>
+      <h3>Celonis</h3>
+      <p>Process Mining Specialist</p>
+    </article>
+    <article class="cert-card">
+      <div class="ribbon">Verified</div>
+      <h3>Learnathon</h3>
+      <p>Hackathon winner: Team Collaboration</p>
+    </article>
+    <article class="cert-card">
+      <div class="ribbon">Verified</div>
+      <h3>Intel Digital India</h3>
+      <p>Emerging Technologies Program</p>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact unique-appear" id="contact">
+  <h2>Contact Me</h2>
+  <p class="contact-subtitle">Let’s connect and bring your next idea to life. Send a message and I’ll reply ASAP.</p>
+
+  <div class="contact-grid">
+    <aside class="contact-info">
+      <div class="contact-badge">Quick Contact</div>
+      <p>You can ask about:</p>
+      <ul>
+        <li>Project collaboration</li>
+        <li>Internship opportunities</li>
+        <li>AI/ML and Web development</li>
+      </ul>
+      <div class="contact-details">
+        <p>📧 email@example.com</p>
+        <p>📍 Bangalore, India</p>
+      </div>
+    </aside>
+
+    <div class="contact-form-wrapper">
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="socials socials-vertical">
+    <p>Connect with me:</p>
+    <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.instagram.com/vishalkumaran_07" class="instagram-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="mailto:vishalkumaran_07@gmail.com" target="_blank" rel="noopener noreferrer">Gmail</a>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
