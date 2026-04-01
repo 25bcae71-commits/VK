@@ -8,8 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/portfolioDB")
+// MongoDB Atlas connection (replace with your Atlas URL)
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
@@ -23,7 +23,6 @@ const ContactSchema = new mongoose.Schema({
 const Contact = mongoose.model("Contact", ContactSchema);
 
 // Routes
-// Routes
 app.post("/contact", async (req, res) => {
   const data = new Contact(req.body);
   await data.save();
@@ -35,7 +34,8 @@ app.get("/contacts", async (req, res) => {
   res.json(contacts);
 });
 
-// Server
-app.listen(5000, () => {
-  console.log("Server running on http://localhost:5000");
+// Server (IMPORTANT FOR RENDER)
+const PORT = process.env.PORT
+app.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
 });
